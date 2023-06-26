@@ -27,9 +27,9 @@ composer install
 ```bash
 npm install
 ```
-- Run `npm run dev`
+- Run `npm run build`
 ```bash
-npm run dev
+npm run build
 ```
 - Run `cp .env.example .env`
 ```bash
@@ -42,6 +42,10 @@ php artisan key:generate
 - Run `php artisan migrate`
 ```bash
 php artisan migrate
+```
+- Run `php artisan db:seed`
+```bash
+php artisan db:seed
 ```
 
 ## License

@@ -67,10 +67,10 @@ class PermissionSeeder extends Seeder
 
         $role_super_admin->givePermissionTo(Permission::all());
 
-        $user_super_admin = User::find(1);
+        $user_super_admin = User::where('email', 'master@mail.com')->first();
         $user_super_admin->assignRole('super-admin');
 
-        $user_admin = User::find(2);
+        $user_admin = User::where('email', 'admin@mail.com')->first();
         $user_admin->assignRole('admin');
     }
 }
